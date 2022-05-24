@@ -12,6 +12,7 @@ struct AzitQRCodeApp: App {
     var body: some Scene {
         WindowGroup {
             MainView()
+				.navigationTitle("Azit QR Code!")
         }
     }
 }

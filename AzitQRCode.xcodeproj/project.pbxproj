@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F5AF46E9283D113500FBD73D /* Azit20220606.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF46E8283D113500FBD73D /* Azit20220606.swift */; };
+		F5AF46EC283D1F4000FBD73D /* SelectTshirt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF46EB283D1F4000FBD73D /* SelectTshirt.swift */; };
 		F5B92953283D07A1009B6C2D /* AzitQRCodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B92952283D07A1009B6C2D /* AzitQRCodeApp.swift */; };
 		F5B92955283D07A1009B6C2D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B92954283D07A1009B6C2D /* MainView.swift */; };
 		F5B92957283D07A3009B6C2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5B92956283D07A3009B6C2D /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F5AF46E8283D113500FBD73D /* Azit20220606.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Azit20220606.swift; sourceTree = "<group>"; };
+		F5AF46EB283D1F4000FBD73D /* SelectTshirt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTshirt.swift; sourceTree = "<group>"; };
 		F5B9294F283D07A1009B6C2D /* AzitQRCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AzitQRCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B92952283D07A1009B6C2D /* AzitQRCodeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzitQRCodeApp.swift; sourceTree = "<group>"; };
 		F5B92954283D07A1009B6C2D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -32,6 +36,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F5AF46EA283D1E9300FBD73D /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				F5AF46E8283D113500FBD73D /* Azit20220606.swift */,
+				F5AF46EB283D1F4000FBD73D /* SelectTshirt.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		F5B92946283D07A1009B6C2D = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +66,7 @@
 			children = (
 				F5B92952283D07A1009B6C2D /* AzitQRCodeApp.swift */,
 				F5B92954283D07A1009B6C2D /* MainView.swift */,
+				F5AF46EA283D1E9300FBD73D /* New Group */,
 				F5B92956283D07A3009B6C2D /* Assets.xcassets */,
 				F5B92958283D07A3009B6C2D /* Preview Content */,
 			);
@@ -138,7 +152,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5B92955283D07A1009B6C2D /* MainView.swift in Sources */,
+				F5AF46E9283D113500FBD73D /* Azit20220606.swift in Sources */,
 				F5B92953283D07A1009B6C2D /* AzitQRCodeApp.swift in Sources */,
+				F5AF46EC283D1F4000FBD73D /* SelectTshirt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,36 +10,33 @@ import SwiftUI
 struct MainView: View {
 	
 	
-	var body: some View {
+    var body: some View {
 		NavigationView{
+			
+			
 			List {
-				listComponent(name: "Azit in 20220606", destination: <#T##AnyView#>)
+				NavigationLink(
+					destination: Azit20220606()
+						.navigationBarBackButtonHidden(true)
+						.navigationBarTitle("애지트 티셔츠 보관창고")
+				) {
+					HStack {
+						Text("Azit With WWDC")
+							.padding()
+						Spacer()
+						//Image(systemName: "chevron.right")
+					}
+				} // NavigationLink
 			} // List
 		} // NavigationView
-		.navigationTitle("A-zit QR Code")
-	} // body
+		.navigationBarTitle("Azit QR Code")
 		
-} // MainView
-
+    } // View
+}
 
 struct ContentView_Previews: PreviewProvider {
-	static var previews: some View {
-		MainView()
-	}
+    static var previews: some View {
+        MainView()
+    }
 }
 
-
-struct listComponent : View {
-	@State var name : String
-	@State var destination : AnyView
-	var body: some View {
-		NavigationLink(destination: destination) {
-			HStack {
-				Text(name)
-					.padding()
-				Spacer()
-				Image(systemName: "chevron.right")
-			}
-		}
-	}
-}
