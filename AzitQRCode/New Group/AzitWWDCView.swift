@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct Azit20220606: View {
+struct AzitWWDCView: View {
 	@State private var session : String = "Morning"
 	@State private var name = ""
-	@State private var size = "L"
+	@State private var size = "XL"
 	@State private var showQRModal = false
 	@State private var showSizeModal = false
 	@State private var isSelected = false
@@ -20,7 +20,7 @@ struct Azit20220606: View {
 		VStack {
 				Form {
 					Section {
-						ItemTitle("SESSION을 정해주세요.")
+						Text("SESSION을 정해주세요.").fontWeight(.semibold)
 						Picker(selection: self.$session, label: Text("안녕하세요")) {
 							Text("Morning").tag("Morning")
 							Text("Afternoon").tag("Afternoon")
@@ -29,9 +29,10 @@ struct Azit20220606: View {
 					
 					Section {
 						HStack {
-							Image(systemName: "tshirt")
 							Text("티셔츠 사이즈를 골라주세요.")
 							Spacer()
+							Image(systemName: "tshirt")
+							Text(self.size).fontWeight(.semibold)
 							Image(systemName: "chevron.right")
 						}
 						.sheet(isPresented: self.$showSizeModal, content: {SelectTshirt(size: self.$size, showModal: self.$showSizeModal)})
@@ -39,42 +40,43 @@ struct Azit20220606: View {
 							self.showSizeModal.toggle()
 						}
 					}
+					Section {
+						VStack(alignment: .leading) {
+							Text("이름을 입력해주세요.").fontWeight(.semibold)
+							TextField("이름", text: self.$name)
+								.disableAutocorrection(true)
+								.textFieldStyle(RoundedBorderTextFieldStyle())
+								.padding(.top, 0)
+						} // VStack
+					}
 					
-					VStack(alignment: .leading) {
-						ItemTitle("이름을 입력해주세요.")
-						TextField("이름", text: self.$name)
-							.disableAutocorrection(true)
-							.textFieldStyle(RoundedBorderTextFieldStyle())
-							.padding(.top, 0)
+					ZStack {
+						RoundedRectangle(cornerRadius: 8)
+							.foregroundColor(self.name == "" ? .gray : .blue)
 						
-					} // VStack
-					
+						Text("QR코드 생성하기")
+							.foregroundColor(.white)
+					}
+					.sheet(isPresented: self.$showQRModal, content: {QRCodeView(session: self.$session, name: self.$name, size: self.$size)})
+					.frame(height : 60)
+					.padding()
+					.onTapGesture {
+						if self.name != "" {
+							print(self.isSelected)
+							self.showQRModal.toggle()
+						}
+					}
 				} // Form
 			
-			ZStack {
-				RoundedRectangle(cornerRadius: 8)
-					.foregroundColor(self.name == "" ? .gray : .blue)
-				
-				Text("QR코드 생성하기")
-			}
-			.sheet(isPresented: self.$showQRModal, content: { })
-			.frame(height : 60)
-			.padding()
-			.onTapGesture {
-				if self.name != "" && self.isSelected {
-					self.showQRModal.toggle()
-				}
-			}
-			
 		} // VStack
-	} // View
+	} // body
 		
 }
 
 struct Azit20220606_Previews: PreviewProvider {
     static var previews: some View {
-		Azit20220606()
-			.preferredColorScheme(.dark)
+		AzitWWDCView()
+//			.preferredColorScheme(.dark)
 	}
 }
 

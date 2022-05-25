@@ -7,16 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F5AF46E9283D113500FBD73D /* Azit20220606.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF46E8283D113500FBD73D /* Azit20220606.swift */; };
-		F5AF46EC283D1F4000FBD73D /* SelectTshirt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF46EB283D1F4000FBD73D /* SelectTshirt.swift */; };
+		F591BF5B283D353D001C8C51 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F591BF5A283D353D001C8C51 /* QRCodeView.swift */; };
+		F591BF63283D42B1001C8C51 /* AzitWWDCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F591BF62283D42B1001C8C51 /* AzitWWDCApp.swift */; };
+		F591BF65283D42B1001C8C51 /* AzitWWDCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F591BF64283D42B1001C8C51 /* AzitWWDCView.swift */; };
+		F591BF67283D42B2001C8C51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F591BF66283D42B2001C8C51 /* Assets.xcassets */; };
+		F591BF6A283D42B2001C8C51 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F591BF69283D42B2001C8C51 /* Preview Assets.xcassets */; };
+		F591BF6F283D42B2001C8C51 /* AzitWWDC.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = F591BF60283D42B1001C8C51 /* AzitWWDC.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F591BF75283D42D7001C8C51 /* SelectTshirt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF46EB283D1F4000FBD73D /* SelectTshirt.swift */; };
+		F591BF77283D4341001C8C51 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F591BF76283D4341001C8C51 /* QRCodeView.swift */; };
+		F591BF79283D435A001C8C51 /* SelectTshirt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F591BF78283D435A001C8C51 /* SelectTshirt.swift */; };
+		F5AF46E9283D113500FBD73D /* AzitWWDCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF46E8283D113500FBD73D /* AzitWWDCView.swift */; };
 		F5B92953283D07A1009B6C2D /* AzitQRCodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B92952283D07A1009B6C2D /* AzitQRCodeApp.swift */; };
 		F5B92955283D07A1009B6C2D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B92954283D07A1009B6C2D /* MainView.swift */; };
 		F5B92957283D07A3009B6C2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5B92956283D07A3009B6C2D /* Assets.xcassets */; };
 		F5B9295A283D07A3009B6C2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5B92959283D07A3009B6C2D /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F591BF6D283D42B2001C8C51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5B92947283D07A1009B6C2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F591BF5F283D42B1001C8C51;
+			remoteInfo = AzitWWDC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F591BF73283D42B2001C8C51 /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				F591BF6F283D42B2001C8C51 /* AzitWWDC.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		F5AF46E8283D113500FBD73D /* Azit20220606.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Azit20220606.swift; sourceTree = "<group>"; };
+		F591BF5A283D353D001C8C51 /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
+		F591BF60283D42B1001C8C51 /* AzitWWDC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AzitWWDC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F591BF62283D42B1001C8C51 /* AzitWWDCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzitWWDCApp.swift; sourceTree = "<group>"; };
+		F591BF64283D42B1001C8C51 /* AzitWWDCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzitWWDCView.swift; sourceTree = "<group>"; };
+		F591BF66283D42B2001C8C51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F591BF69283D42B2001C8C51 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F591BF6B283D42B2001C8C51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F591BF6C283D42B2001C8C51 /* AzitWWDC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AzitWWDC.entitlements; sourceTree = "<group>"; };
+		F591BF76283D4341001C8C51 /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
+		F591BF78283D435A001C8C51 /* SelectTshirt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTshirt.swift; sourceTree = "<group>"; };
+		F5AF46E8283D113500FBD73D /* AzitWWDCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzitWWDCView.swift; sourceTree = "<group>"; };
 		F5AF46EB283D1F4000FBD73D /* SelectTshirt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTshirt.swift; sourceTree = "<group>"; };
 		F5B9294F283D07A1009B6C2D /* AzitQRCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AzitQRCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B92952283D07A1009B6C2D /* AzitQRCodeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzitQRCodeApp.swift; sourceTree = "<group>"; };
@@ -26,6 +68,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F591BF5D283D42B1001C8C51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F5B9294C283D07A1009B6C2D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -36,11 +85,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F591BF61283D42B1001C8C51 /* AzitWWDC */ = {
+			isa = PBXGroup;
+			children = (
+				F591BF62283D42B1001C8C51 /* AzitWWDCApp.swift */,
+				F591BF64283D42B1001C8C51 /* AzitWWDCView.swift */,
+				F591BF76283D4341001C8C51 /* QRCodeView.swift */,
+				F591BF78283D435A001C8C51 /* SelectTshirt.swift */,
+				F591BF66283D42B2001C8C51 /* Assets.xcassets */,
+				F591BF6B283D42B2001C8C51 /* Info.plist */,
+				F591BF6C283D42B2001C8C51 /* AzitWWDC.entitlements */,
+				F591BF68283D42B2001C8C51 /* Preview Content */,
+			);
+			path = AzitWWDC;
+			sourceTree = "<group>";
+		};
+		F591BF68283D42B2001C8C51 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F591BF69283D42B2001C8C51 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		F5AF46EA283D1E9300FBD73D /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				F5AF46E8283D113500FBD73D /* Azit20220606.swift */,
+				F5AF46E8283D113500FBD73D /* AzitWWDCView.swift */,
 				F5AF46EB283D1F4000FBD73D /* SelectTshirt.swift */,
+				F591BF5A283D353D001C8C51 /* QRCodeView.swift */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -49,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				F5B92951283D07A1009B6C2D /* AzitQRCode */,
+				F591BF61283D42B1001C8C51 /* AzitWWDC */,
 				F5B92950283D07A1009B6C2D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				F5B9294F283D07A1009B6C2D /* AzitQRCode.app */,
+				F591BF60283D42B1001C8C51 /* AzitWWDC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +159,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F591BF5F283D42B1001C8C51 /* AzitWWDC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F591BF70283D42B2001C8C51 /* Build configuration list for PBXNativeTarget "AzitWWDC" */;
+			buildPhases = (
+				F591BF5C283D42B1001C8C51 /* Sources */,
+				F591BF5D283D42B1001C8C51 /* Frameworks */,
+				F591BF5E283D42B1001C8C51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AzitWWDC;
+			productName = AzitWWDC;
+			productReference = F591BF60283D42B1001C8C51 /* AzitWWDC.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
 		F5B9294E283D07A1009B6C2D /* AzitQRCode */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5B9295D283D07A3009B6C2D /* Build configuration list for PBXNativeTarget "AzitQRCode" */;
@@ -91,10 +183,12 @@
 				F5B9294B283D07A1009B6C2D /* Sources */,
 				F5B9294C283D07A1009B6C2D /* Frameworks */,
 				F5B9294D283D07A1009B6C2D /* Resources */,
+				F591BF73283D42B2001C8C51 /* Embed App Clips */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F591BF6E283D42B2001C8C51 /* PBXTargetDependency */,
 			);
 			name = AzitQRCode;
 			productName = AzitQRCode;
@@ -111,6 +205,9 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					F591BF5F283D42B1001C8C51 = {
+						CreatedOnToolsVersion = 13.4;
+					};
 					F5B9294E283D07A1009B6C2D = {
 						CreatedOnToolsVersion = 13.4;
 					};
@@ -130,11 +227,21 @@
 			projectRoot = "";
 			targets = (
 				F5B9294E283D07A1009B6C2D /* AzitQRCode */,
+				F591BF5F283D42B1001C8C51 /* AzitWWDC */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F591BF5E283D42B1001C8C51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F591BF6A283D42B2001C8C51 /* Preview Assets.xcassets in Resources */,
+				F591BF67283D42B2001C8C51 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F5B9294D283D07A1009B6C2D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -147,20 +254,106 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F591BF5C283D42B1001C8C51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F591BF77283D4341001C8C51 /* QRCodeView.swift in Sources */,
+				F591BF65283D42B1001C8C51 /* AzitWWDCView.swift in Sources */,
+				F591BF63283D42B1001C8C51 /* AzitWWDCApp.swift in Sources */,
+				F591BF79283D435A001C8C51 /* SelectTshirt.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F5B9294B283D07A1009B6C2D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F591BF75283D42D7001C8C51 /* SelectTshirt.swift in Sources */,
 				F5B92955283D07A1009B6C2D /* MainView.swift in Sources */,
-				F5AF46E9283D113500FBD73D /* Azit20220606.swift in Sources */,
+				F5AF46E9283D113500FBD73D /* AzitWWDCView.swift in Sources */,
+				F591BF5B283D353D001C8C51 /* QRCodeView.swift in Sources */,
 				F5B92953283D07A1009B6C2D /* AzitQRCodeApp.swift in Sources */,
-				F5AF46EC283D1F4000FBD73D /* SelectTshirt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F591BF6E283D42B2001C8C51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F591BF5F283D42B1001C8C51 /* AzitWWDC */;
+			targetProxy = F591BF6D283D42B2001C8C51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		F591BF71283D42B2001C8C51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AzitWWDC/AzitWWDC.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AzitWWDC/Preview Content\"";
+				DEVELOPMENT_TEAM = P2UJWPTGRX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AzitWWDC/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AzitQRCode;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = developer.Toby.AzitQRCode.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F591BF72283D42B2001C8C51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AzitWWDC/AzitWWDC.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AzitWWDC/Preview Content\"";
+				DEVELOPMENT_TEAM = P2UJWPTGRX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AzitWWDC/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AzitQRCode;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = developer.Toby.AzitQRCode.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		F5B9295B283D07A3009B6C2D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -278,6 +471,7 @@
 		F5B9295E283D07A3009B6C2D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +485,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,13 +495,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		F5B9295F283D07A3009B6C2D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -320,6 +516,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -329,13 +526,22 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F591BF70283D42B2001C8C51 /* Build configuration list for PBXNativeTarget "AzitWWDC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F591BF71283D42B2001C8C51 /* Debug */,
+				F591BF72283D42B2001C8C51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F5B9294A283D07A1009B6C2D /* Build configuration list for PBXProject "AzitQRCode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

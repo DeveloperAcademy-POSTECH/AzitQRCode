@@ -11,14 +11,12 @@ struct MainView: View {
 	
 	
     var body: some View {
-		NavigationView{
-			
-			
+		NavigationView {
 			List {
 				NavigationLink(
-					destination: Azit20220606()
+					destination: AzitWWDCView()
 						.navigationBarBackButtonHidden(true)
-						.navigationBarTitle("애지트 티셔츠 보관창고")
+						.navigationBarTitle("Azit WWDC")
 				) {
 					HStack {
 						Text("Azit With WWDC")
@@ -29,9 +27,11 @@ struct MainView: View {
 				} // NavigationLink
 			} // List
 		} // NavigationView
-		.navigationBarTitle("Azit QR Code")
+		.navigationBarTitleDisplayMode(.large)
+		
 		
     } // View
+	
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -40,3 +40,15 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
+// https://stackoverflow.com/questions/59234958/swiftui-navigationbarbackbuttonhidden-swipe-back-gesture
+extension UINavigationController: UIGestureRecognizerDelegate {
+	override open func viewDidLoad() {
+		super.viewDidLoad()
+		interactivePopGestureRecognizer?.delegate = self
+	}
+
+	public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+		return viewControllers.count > 1
+	}
+}
+// END

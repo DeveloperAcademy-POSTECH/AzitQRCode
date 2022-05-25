@@ -1,8 +1,8 @@
 //
 //  SelectTshirt.swift
-//  AzitQRCode
+//  AzitWWDC
 //
-//  Created by Choi Inho on 2022/05/24.
+//  Created by Choi Inho on 2022/05/25.
 //
 
 import SwiftUI
@@ -12,7 +12,7 @@ struct SelectTshirt: View {
 	@Binding var size : String
 	@Binding var showModal : Bool
 	
-    var body: some View {
+	var body: some View {
 		VStack {
 			Text("사이즈를 골라주세요.")
 				.font(.largeTitle)
@@ -41,11 +41,11 @@ struct SelectTshirt: View {
 				}
 			}.padding()
 		}
-    }
+	}
 }
 
 struct SelectTshirt_Previews: PreviewProvider {
-    static var previews: some View {
+	static var previews: some View {
 		SelectTshirt(size: .constant("L"), showModal: .constant(true))
-    }
+	}
 }
