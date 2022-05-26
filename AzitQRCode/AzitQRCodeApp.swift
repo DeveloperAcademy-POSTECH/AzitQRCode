@@ -11,8 +11,7 @@ import SwiftUI
 struct AzitQRCodeApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
-				.navigationBarTitle("Azit QR Code")
+			MainView()
         }
     }
 }
