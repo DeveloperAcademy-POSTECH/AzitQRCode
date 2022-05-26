@@ -27,7 +27,6 @@ struct SelectTshirt: View {
 				Text("3XL").tag("3XL")
 			}
 			.pickerStyle(.wheel)
-			.border(.black, width: 1)
 			.padding()
 			
 			Button(action: {self.showModal.toggle()}){
@@ -37,7 +36,6 @@ struct SelectTshirt: View {
 						.foregroundColor(.blue)
 					Text("결 정")
 						.foregroundColor(.white)
-						.font(.system(size: 23))
 				}
 			}.padding()
 		}
