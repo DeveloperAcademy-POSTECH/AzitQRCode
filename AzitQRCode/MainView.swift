@@ -8,30 +8,39 @@
 import SwiftUI
 
 struct MainView: View {
-	
+	@State var madebyModal = false
+	@State var isNavigationBarHidden : Bool = true
 	
     var body: some View {
 		NavigationView {
-			List {
-				NavigationLink(
-					destination: AzitWWDCView()
-						.navigationBarBackButtonHidden(true)
-						.navigationBarTitle("Azit WWDC")
-				) {
-					HStack {
-						Text("Azit With WWDC")
-							.padding()
-						Spacer()
-						//Image(systemName: "chevron.right")
+				List {
+					NavigationLink(
+						destination: Azit20220606()
+							.navigationBarBackButtonHidden(true)
+							.navigationBarTitle("6월 6일, 애지트 축제")
+					) {
+						HStack {
+							Text("6월 6일, 애지트 축제")
+								.padding()
+							Spacer()
+						}
+					} // NavigationLink
+					
+					NavigationLink(
+						destination: CreditView()
+							.navigationTitle("Credit Page")
+					) {
+						HStack {
+							Text("Credit Page")
+								.padding()
+							Spacer()
+						}
 					}
-				} // NavigationLink
-			} // List
+				} // List
+			
+			.navigationTitle("Azit Entry QR Code")
 		} // NavigationView
-		.navigationBarTitleDisplayMode(.large)
-		
-		
     } // View
-	
 }
 
 struct ContentView_Previews: PreviewProvider {
