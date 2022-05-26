@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
-//  AzitWWDC
+//  Azit20220606.swift
+//  AzitQRCode
 //
-//  Created by Choi Inho on 2022/05/25.
+//  Created by Choi Inho on 2022/05/24.
 //
 
 import SwiftUI
 
-struct AzitWWDCView: View {
+struct Azit20220606: View {
 	@State private var session : String = "Morning"
 	@State private var name = ""
 	@State private var size = "XL"
@@ -62,7 +62,6 @@ struct AzitWWDCView: View {
 					.padding()
 					.onTapGesture {
 						if self.name != "" {
-							print(self.isSelected)
 							self.showQRModal.toggle()
 						}
 					}
@@ -70,10 +69,25 @@ struct AzitWWDCView: View {
 			
 		} // VStack
 	} // body
+		
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Azit20220606_Previews: PreviewProvider {
     static var previews: some View {
-        AzitWWDCView()
-    }
+		Azit20220606()
+	}
+}
+
+struct ItemTitle : View {
+	var text : String
+	
+	init(_ str : String){
+		self.text = str
+	}
+	
+	var body: some View {
+		Text(text)
+			.fontWeight(.heavy)
+			.font(.headline)
+	}
 }

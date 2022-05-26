@@ -1,8 +1,8 @@
 //
 //  QRCodeView.swift
-//  AzitQRCode
+//  Azit20220606
 //
-//  Created by Choi Inho on 2022/05/25.
+//  Created by Choi Inho on 2022/05/26.
 //
 // original : https://www.hackingwithswift.com/books/ios-swiftui/generating-and-scaling-up-a-qr-code
 
@@ -15,15 +15,42 @@ struct QRCodeView: View {
 	@Binding var session : String
 	@Binding var name : String
 	@Binding var size : String
+	private let screenWidth = UIScreen.main.bounds.size.width
 	
 	var body: some View {
 		VStack {
-			Text("Session : \(session)")
-				.padding()
-			Text("name : \(name)")
-				.padding()
-			Text("size : \(size)")
-				.padding()
+			Text("6월 6일, at Azit 입장권")
+				.font(.largeTitle)
+			
+			HStack{
+				Text("Session")
+					.foregroundColor(.gray)
+				Spacer()
+				Text("\(self.session)")
+					.font(.title3)
+			}
+			.frame(width: screenWidth * 0.5)
+			.padding()
+			
+			HStack{
+				Text("Name")
+					.foregroundColor(.gray)
+				Spacer()
+				Text("\(self.name)")
+					.font(.title3)
+			}
+			.frame(width: screenWidth * 0.5)
+			.padding()
+			
+			HStack{
+				Text("Size")
+					.foregroundColor(.gray)
+				Spacer()
+				Text("\(self.size.uppercased())")
+					.font(.title3)
+			}
+			.frame(width: screenWidth * 0.5)
+			.padding()
 			
 			Image(uiImage: generateQRCode(from: "\(session),\(name),\(size)"))
 				.interpolation(.none)
@@ -48,7 +75,7 @@ struct QRCodeView: View {
 }
 
 struct QRCodeView_Previews: PreviewProvider {
-    static var previews: some View {
-        QRCodeView(session: .constant("Afternoon"), name: .constant("Toby"), size: .constant("2xl"))
-    }
+	static var previews: some View {
+		QRCodeView(session: .constant("Afternoon"), name: .constant("Toby"), size: .constant("2xl"))
+	}
 }
