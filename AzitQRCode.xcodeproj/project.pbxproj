@@ -59,6 +59,7 @@
 		F5297B17283F14A300ACA590 /* SelectTshirt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTshirt.swift; sourceTree = "<group>"; };
 		F5297B19283F14B600ACA590 /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
 		F53EC3D0283F15BD000EDB42 /* Azit20220606View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Azit20220606View.swift; sourceTree = "<group>"; };
+		F5732BE1283FB4B100AF48B1 /* AzitQRCode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AzitQRCode.entitlements; sourceTree = "<group>"; };
 		F591BF5A283D353D001C8C51 /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
 		F591BF7A283E4C1B001C8C51 /* CreditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditView.swift; sourceTree = "<group>"; };
 		F591BF7C283EA069001C8C51 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
@@ -143,6 +144,7 @@
 		F5B92951283D07A1009B6C2D /* AzitQRCode */ = {
 			isa = PBXGroup;
 			children = (
+				F5732BE1283FB4B100AF48B1 /* AzitQRCode.entitlements */,
 				F5B92952283D07A1009B6C2D /* AzitQRCodeApp.swift */,
 				F591BF7A283E4C1B001C8C51 /* CreditView.swift */,
 				F5B92954283D07A1009B6C2D /* MainView.swift */,
@@ -482,6 +484,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AzitQRCode/AzitQRCode.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AzitQRCode/Preview Content\"";
@@ -513,6 +516,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AzitQRCode/AzitQRCode.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AzitQRCode/Preview Content\"";
