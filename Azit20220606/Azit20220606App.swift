@@ -13,7 +13,7 @@ struct Azit20220606App: App {
         WindowGroup {
 			NavigationView{
 				Azit20220606View()
-				.navigationTitle(Text("6월 6일, 애지트 축제"))
+					.navigationTitle(Text("6월 6일, 애지트 축제"))
 			}
         }
     }

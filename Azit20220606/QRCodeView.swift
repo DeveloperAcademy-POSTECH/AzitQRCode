@@ -51,13 +51,37 @@ struct QRCodeView: View {
 			}
 			.frame(width: screenWidth * 0.5)
 			.padding()
+			ZStack {
+				RoundedRectangle(cornerRadius: 8)
+					.frame(width: 230, height: 230)
+					.foregroundColor(.white)
+				
+				Image(uiImage: generateQRCode(from: "\(session),\(name),\(size)"))
+					.interpolation(.none)
+					.resizable()
+					.scaledToFit()
+					.frame(width: 200, height: 200)
 			
-			Image(uiImage: generateQRCode(from: "\(session),\(name),\(size)"))
-				.interpolation(.none)
-				.resizable()
-				.scaledToFit()
-				.frame(width: 200, height: 200)
-		}
+			} // ZStack
+			
+			//Spacer()
+			
+			HStack {
+				HStack {
+					Text("Code & Idea by")
+						.foregroundColor(.gray)
+					Text("Toby")
+				}
+				.padding()
+				Spacer()
+				HStack {
+					Text("Design by")
+						.foregroundColor(.gray)
+					Text("Jessica")
+				}
+				.padding()
+			}
+		} // VStack
 	}
 	
 	func generateQRCode(from string: String) -> UIImage {
