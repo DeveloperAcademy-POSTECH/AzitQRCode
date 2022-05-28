@@ -71,6 +71,7 @@ struct QRCodeView: View {
 					Text("Code & Idea by")
 						.foregroundColor(.gray)
 					Text("Toby")
+						.fontWeight(.semibold)
 				}
 				.padding()
 				Spacer()
@@ -78,6 +79,7 @@ struct QRCodeView: View {
 					Text("Design by")
 						.foregroundColor(.gray)
 					Text("Jessica")
+						.fontWeight(.semibold)
 				}
 				.padding()
 			}
