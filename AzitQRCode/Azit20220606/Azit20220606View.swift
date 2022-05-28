@@ -29,7 +29,7 @@ struct Azit20220606: View {
 				
 				Section {
 					HStack {
-						Text("티셔츠 사이즈를 골라주세요.")
+						Text("티셔츠 사이즈를 골라주세요.").fontWeight(.semibold)
 						Spacer()
 						Image(systemName: "tshirt")
 						Text(self.size).fontWeight(.semibold)
