@@ -9,14 +9,13 @@
 
 1. 먼저 QR코드를 실행해서 앱을 실행시켜 주세요!
 
-![Simulator Screen Shot - iPhone 13 - 2022-05-30 at 07 18 20](https://user-images.githubusercontent.com/55151796/170893580-0224aba3-0233-4291-944e-268a918b5ea4.png)
-
+<img src="https://user-images.githubusercontent.com/55151796/170893737-7f05af8f-f77d-4996-9f70-660012352f15.png" width="400"/>
 2.자신의 SESSION 선택 및 이름을 입력해주세요.
 
-![Simulator Screen Shot - iPhone 13 - 2022-05-30 at 07 22 17](https://user-images.githubusercontent.com/55151796/170893623-4269801c-7bdd-4485-81e0-9e78c8b90050.png)
+<img src="https://user-images.githubusercontent.com/55151796/170893737-7f05af8f-f77d-4996-9f70-660012352f15.png](https://user-images.githubusercontent.com/55151796/170893739-b8a64fb0-24a0-4b38-b1f2-e2945414ec47.png" width="400"/>
 3. 신청했던 옷 사이즈를 선택해주세요!
 
-![Simulator Screen Shot - iPhone 13 - 2022-05-30 at 07 23 28](https://user-images.githubusercontent.com/55151796/170893648-e60d907f-126b-49a0-91c2-5faa0d155c69.png)
+<img src="https://user-images.githubusercontent.com/55151796/170893737-7f05af8f-f77d-4996-9f70-660012352f15.png](https://user-images.githubusercontent.com/55151796/170893741-47421513-f564-406d-b6ce-ef3c417fb6e5.png" width="400"/>
 4. 이제 스마트하게 QR코드로 입장하면 *The End*
 
 ### 우리이제 앱 설치 없이 스마트하게 QR코드로 입장해요!
