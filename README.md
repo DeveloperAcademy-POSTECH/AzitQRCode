@@ -9,7 +9,7 @@
 
 1. 먼저 QR코드를 실행해서 앱을 실행시켜 주세요!
 
-<img src="https://user-images.githubusercontent.com/55151796/170893842-5ba5a7d3-4562-4182-877f-6832ceb2ac82.png" width="400"; border-width: 2px;/>
+<img src="https://user-images.githubusercontent.com/55151796/170893842-5ba5a7d3-4562-4182-877f-6832ceb2ac82.png" width="400" style="border: 1px"/>
 
 2.자신의 SESSION 선택 및 이름을 입력해주세요.
 
