@@ -14,9 +14,11 @@
 2.자신의 SESSION 선택 및 이름을 입력해주세요.
 
 <img src="https://user-images.githubusercontent.com/55151796/170893842-5ba5a7d3-4562-4182-877f-6832ceb2ac82.png" width="400"/>
+
 3. 신청했던 옷 사이즈를 선택해주세요!
 
 <img src="https://user-images.githubusercontent.com/55151796/170893741-47421513-f564-406d-b6ce-ef3c417fb6e5.png" width="400"/>
+
 4. 이제 스마트하게 QR코드로 입장하면 *The End*
 
 ### 우리이제 앱 설치 없이 스마트하게 QR코드로 입장해요!
