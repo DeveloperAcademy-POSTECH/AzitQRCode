@@ -10,9 +10,10 @@
 1. 먼저 QR코드를 실행해서 앱을 실행시켜 주세요!
 
 <img src="https://user-images.githubusercontent.com/55151796/170893842-5ba5a7d3-4562-4182-877f-6832ceb2ac82.png" width="400" border="1"/>
+
 2.자신의 SESSION 선택 및 이름을 입력해주세요.
 
-<img src="https://user-images.githubusercontent.com/55151796/170893737-7f05af8f-f77d-4996-9f70-660012352f15.png" width="400"/>
+<img src="https://user-images.githubusercontent.com/55151796/170893842-5ba5a7d3-4562-4182-877f-6832ceb2ac82.png" width="400"/>
 3. 신청했던 옷 사이즈를 선택해주세요!
 
 <img src="https://user-images.githubusercontent.com/55151796/170893741-47421513-f564-406d-b6ce-ef3c417fb6e5.png" width="400"/>
