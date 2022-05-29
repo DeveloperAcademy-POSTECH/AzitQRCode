@@ -1,4 +1,7 @@
 {
-    "appclips":"P2UJWPTGRX.developer.Toby.AzitQRCode.Clip
-    
+    "appclips": {
+        "apps": [
+            "P2UJWPTGRX.developer.Toby.AzitQRCode.Clip
+        ]
+    }
 }
