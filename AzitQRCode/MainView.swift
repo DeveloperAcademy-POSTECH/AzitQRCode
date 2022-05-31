@@ -17,10 +17,10 @@ struct MainView: View {
 					NavigationLink(
 						destination: Azit20220606()
 							.navigationBarBackButtonHidden(true)
-							.navigationBarTitle("6월 6일, 애지트 축제")
+							.navigationBarTitle("6월 6일, 애지트 행사")
 					) {
 						HStack {
-							Text("6월 6일, 애지트 축제")
+							Text("6월 6일, 애지트 행사")
 								.padding()
 							Spacer()
 						}
