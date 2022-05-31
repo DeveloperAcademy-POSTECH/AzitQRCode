@@ -15,6 +15,7 @@ struct QRCodeView: View {
 	@Binding var session : String
 	@Binding var name : String
 	@Binding var size : String
+	@Binding var tshirtRequest : Bool
 	private let screenWidth = UIScreen.main.bounds.size.width
 	
 	var body: some View {
@@ -42,15 +43,18 @@ struct QRCodeView: View {
 			.frame(width: screenWidth * 0.5)
 			.padding()
 			
-			HStack{
-				Text("Size")
-					.foregroundColor(.gray)
-				Spacer()
-				Text("\(self.size.uppercased())")
-					.font(.title3)
+			if tshirtRequest {
+				HStack{
+					Text("Size")
+						.foregroundColor(.gray)
+					Spacer()
+					Text("\(self.size.uppercased())")
+						.font(.title3)
+				}
+				.frame(width: screenWidth * 0.5)
+				.padding()
+	
 			}
-			.frame(width: screenWidth * 0.5)
-			.padding()
 			ZStack {
 				RoundedRectangle(cornerRadius: 8)
 					.frame(width: 230, height: 230)
@@ -102,6 +106,6 @@ struct QRCodeView: View {
 
 struct QRCodeView_Previews: PreviewProvider {
 	static var previews: some View {
-		QRCodeView(session: .constant("Afternoon"), name: .constant("Toby"), size: .constant("2xl"))
+		QRCodeView(session: .constant("Afternoon"), name: .constant("Toby"), size: .constant("2xl"), tshirtRequest: .constant(true))
 	}
 }
