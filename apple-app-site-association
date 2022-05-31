@@ -1,12 +1,5 @@
----
-layout: none
-permalink: .well-known/apple-app-site-association
----
-
 {
     "appclips": {
-        "apps": [
-            "P2UJWPTGRX.developer.Toby.AzitQRCode.Clip
-        ]
+        "apps": ["P2UJWPTGRX.developer.Toby.AzitQRCode.Clip"]
     }
-}
+} 
