@@ -20,7 +20,7 @@ struct QRCodeView: View {
 	
 	var body: some View {
 		VStack {
-			Text("6월 6일, at Azit 입장권")
+			Text("Azit Ticket for 6th June")
 				.font(.largeTitle)
 			
 			HStack{
