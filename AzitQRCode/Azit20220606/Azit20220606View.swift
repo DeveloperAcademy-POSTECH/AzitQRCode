@@ -48,8 +48,8 @@ struct Azit20220606: View {
 				}
 				Section {
 					VStack(alignment: .leading) {
-						Text("이름을 입력해주세요.").fontWeight(.semibold)
-						TextField("이름", text: self.$name)
+						Text("영어 닉네임을 입력해주세요.").fontWeight(.semibold)
+						TextField("Example) Toby", text: self.$name)
 							.disableAutocorrection(true)
 							.textFieldStyle(RoundedBorderTextFieldStyle())
 							.padding(.top, 0)
@@ -68,7 +68,7 @@ struct Azit20220606: View {
 				Text("QR코드 생성하기")
 					.foregroundColor(.white)
 			}
-			.sheet(isPresented: self.$showQRModal, content: {QRCodeView(session: self.$session, name: self.$name, size: self.$size)})
+			.sheet(isPresented: self.$showQRModal, content: {QRCodeView(session: self.$session, name: self.$name, size: self.$size, tshirtRequest: self.$tshirtsRequest)})
 			.frame(height : 60)
 			.padding()
 			.onTapGesture {

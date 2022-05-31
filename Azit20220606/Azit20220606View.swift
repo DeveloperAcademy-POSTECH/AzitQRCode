@@ -48,8 +48,8 @@ struct Azit20220606View: View {
 				}
 				Section {
 					VStack(alignment: .leading) {
-						Text("이름을 입력해주세요.").fontWeight(.semibold)
-						TextField("Example ) Toby", text: self.$name)
+						Text("영어 닉네임을 입력해주세요.").fontWeight(.semibold)
+						TextField("Example) Toby", text: self.$name)
 							.disableAutocorrection(true)
 							.textFieldStyle(RoundedBorderTextFieldStyle())
 							.padding(.top, 0)

@@ -5,7 +5,6 @@
 	<key>com.apple.developer.associated-domains</key>
 	<array>
 		<string>appclips:azitqrcode.site</string>
-		<string>applinks:azitqrcode.site</string>
 	</array>
 	<key>com.apple.developer.parent-application-identifiers</key>
 	<array>
