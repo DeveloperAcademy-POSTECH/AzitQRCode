@@ -29,23 +29,23 @@ struct Azit20220606: View {
 					}.pickerStyle(.segmented)
 				}
 				
-				Section {
-					Toggle("티셔츠 신청하셨나요?", isOn: self.$tshirtsRequest)
-					if tshirtsRequest {
-						HStack {
-							Text("티셔츠 사이즈를 골라주세요.")
-							Spacer()
-							Image(systemName: "tshirt")
-							Text(self.size).fontWeight(.semibold)
-							Image(systemName: "chevron.right")
-						}
-						.sheet(isPresented: self.$showSizeModal, content: {SelectTshirt(size: self.$size, showModal: self.$showSizeModal)})
-						.onTapGesture {
-							self.showSizeModal.toggle()
-						}
-					}
-
-				}
+//				Section {
+//					Toggle("티셔츠 신청하셨나요?", isOn: self.$tshirtsRequest)
+//					if tshirtsRequest {
+//						HStack {
+//							Text("티셔츠 사이즈를 골라주세요.")
+//							Spacer()
+//							Image(systemName: "tshirt")
+//							Text(self.size).fontWeight(.semibold)
+//							Image(systemName: "chevron.right")
+//						}
+//						.sheet(isPresented: self.$showSizeModal, content: {SelectTshirt(size: self.$size, showModal: self.$showSizeModal)})
+//						.onTapGesture {
+//							self.showSizeModal.toggle()
+//						}
+//					}
+//
+//				}
 				Section {
 					VStack(alignment: .leading) {
 						Text("영어 닉네임을 입력해주세요.").fontWeight(.semibold)
@@ -68,7 +68,7 @@ struct Azit20220606: View {
 				Text("QR코드 생성하기")
 					.foregroundColor(.white)
 			}
-			.sheet(isPresented: self.$showQRModal, content: {QRCodeView(session: self.$session, name: self.$name, size: self.$size, tshirtRequest: self.$tshirtsRequest)})
+			.sheet(isPresented: self.$showQRModal, content: {QRCodeView(session: self.$session, name: self.$name)})
 			.frame(height : 60)
 			.padding()
 			.onTapGesture {

@@ -14,14 +14,17 @@ struct QRCodeView: View {
 	let filter = CIFilter.qrCodeGenerator()
 	@Binding var session : String
 	@Binding var name : String
-	@Binding var size : String
-	@Binding var tshirtRequest : Bool
+//	@Binding var size : String
+//	@Binding var tshirtRequest : Bool
 	private let screenWidth = UIScreen.main.bounds.size.width
+	private let screenHeight = UIScreen.main.bounds.size.height
 	
 	var body: some View {
 		VStack {
+			Spacer()
 			Text("Azit Ticket for 6th June")
 				.font(.largeTitle)
+				.padding(.bottom, screenHeight * 0.05)
 			
 			HStack{
 				Text("Session")
@@ -31,7 +34,7 @@ struct QRCodeView: View {
 					.font(.title3)
 			}
 			.frame(width: screenWidth * 0.5)
-			.padding()
+			.padding(.bottom, screenHeight * 0.01)
 			
 			HStack{
 				Text("Name")
@@ -41,26 +44,25 @@ struct QRCodeView: View {
 					.font(.title3)
 			}
 			.frame(width: screenWidth * 0.5)
-			.padding()
 			
-			if tshirtRequest {
-				HStack{
-					Text("Size")
-						.foregroundColor(.gray)
-					Spacer()
-					Text("\(self.size.uppercased())")
-						.font(.title3)
-				}
-				.frame(width: screenWidth * 0.5)
-				.padding()
-	
-			}
+//			if tshirtRequest {
+//				HStack{
+//					Text("Size")
+//						.foregroundColor(.gray)
+//					Spacer()
+//					Text("\(self.size.uppercased())")
+//						.font(.title3)
+//				}
+//				.frame(width: screenWidth * 0.5)
+//				.padding()
+//
+//			}
 			ZStack {
 				RoundedRectangle(cornerRadius: 8)
 					.frame(width: 230, height: 230)
 					.foregroundColor(.white)
 				
-				Image(uiImage: generateQRCode(from: "\(session),\(name),\(size)"))
+				Image(uiImage: generateQRCode(from: "\(session),\(name)"))
 					.interpolation(.none)
 					.resizable()
 					.scaledToFit()
@@ -68,7 +70,7 @@ struct QRCodeView: View {
 			
 			} // ZStack
 			
-			//Spacer()
+			Spacer()
 			
 			HStack {
 				HStack {
@@ -106,6 +108,6 @@ struct QRCodeView: View {
 
 struct QRCodeView_Previews: PreviewProvider {
 	static var previews: some View {
-		QRCodeView(session: .constant("Afternoon"), name: .constant("Toby"), size: .constant("2xl"), tshirtRequest: .constant(true))
+		QRCodeView(session: .constant("Afternoon"), name: .constant("Toby"))
 	}
 }
