@@ -22,7 +22,7 @@ struct QRCodeView: View {
 	var body: some View {
 		VStack {
 			Spacer()
-			Text("Azit Ticket for 6th June")
+			Text("Let's 투게덥 on June 6th")
 				.font(.largeTitle)
 				.padding(.bottom, screenHeight * 0.05)
 			
