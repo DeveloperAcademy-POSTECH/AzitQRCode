@@ -14,8 +14,6 @@ struct QRCodeView: View {
 	let filter = CIFilter.qrCodeGenerator()
 	@Binding var session : String
 	@Binding var name : String
-//	@Binding var size : String
-//	@Binding var tshirtRequest : Bool
 	private let screenWidth = UIScreen.main.bounds.size.width
 	private let screenHeight = UIScreen.main.bounds.size.height
 	
@@ -45,18 +43,6 @@ struct QRCodeView: View {
 			}
 			.frame(width: screenWidth * 0.5)
 			
-//			if tshirtRequest {
-//				HStack{
-//					Text("Size")
-//						.foregroundColor(.gray)
-//					Spacer()
-//					Text("\(self.size.uppercased())")
-//						.font(.title3)
-//				}
-//				.frame(width: screenWidth * 0.5)
-//				.padding()
-//
-//			}
 			ZStack {
 				RoundedRectangle(cornerRadius: 8)
 					.frame(width: 230, height: 230)
