@@ -1,4 +1,16 @@
 {
+    applinks: {
+        details: [
+            {
+                appIDs: ["76AJ433CP5.com.kim.AsyncSwift"],
+                components: [
+               		{
+                	/: “*”
+                    }
+                ] 
+            }
+        ]
+    },
     "appclips": {
         "apps": ["P2UJWPTGRX.developer.Toby.AzitQRCode.Clip"]
     }
