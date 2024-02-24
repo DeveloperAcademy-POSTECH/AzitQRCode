@@ -1,6 +1,6 @@
 # AzitQRCode
 ## 로직 순서
-<img src="https://github.com/DeveloperAcademy-POSTECH/AzitQRCode/assets/55151796/63f7588e-4728-4133-ac5a-ebd64507fa91" style="border: 1px"/>
+<img src="https://github.com/DeveloperAcademy-POSTECH/AzitQRCode/assets/55151796/3864e3c4-91f5-4a10-b393-1ada7b4058a9" style="border: 1px"/>
 
 
 ## 우리 같이 스마트한 입장 함께해요!
