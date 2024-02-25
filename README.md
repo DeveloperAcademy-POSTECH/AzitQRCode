@@ -26,3 +26,6 @@
 4. 이제 스마트하게 QR코드로 입장하면 *The End*
 
 ### 우리이제 앱 설치 없이 스마트하게 QR코드로 입장해요!
+
+---
+[App Clip 만드는 방법](https://slowsure.tistory.com/144)
